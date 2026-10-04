@@ -1,0 +1,10 @@
+// Workforce & Attrition Analytics — starter measure library
+Total Records = COUNTROWS(FactPerformance)
+Total Revenue = SUM(FactPerformance[Revenue])
+Total Cost = SUM(FactPerformance[Cost])
+Gross Profit = [Total Revenue] - [Total Cost]
+Gross Margin % = DIVIDE([Gross Profit], [Total Revenue])
+Target Value = SUM(FactPerformance[TargetValue])
+Target Attainment % = DIVIDE([Total Revenue], [Target Value])
+Revenue PY = CALCULATE([Total Revenue], DATEADD(DimDate[Date], -1, YEAR))
+YoY Growth % = DIVIDE([Total Revenue] - [Revenue PY], [Revenue PY])
