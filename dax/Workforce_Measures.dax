@@ -1,0 +1,8 @@
+Headcount = DISTINCTCOUNT(FactWorkforce[EmployeeID])
+Attrition Employees = CALCULATE([Headcount], FactWorkforce[Attrition] = "Yes")
+Attrition Rate % = DIVIDE([Attrition Employees], [Headcount])
+Average Tenure = AVERAGE(FactWorkforce[TenureYears])
+Average Engagement = AVERAGE(FactWorkforce[EngagementScore])
+Average Satisfaction = AVERAGE(FactWorkforce[SatisfactionScore])
+High Risk Employees = CALCULATE([Headcount], FactWorkforce[RiskScore] >= 70)
+Average Risk Score = AVERAGE(FactWorkforce[RiskScore])
