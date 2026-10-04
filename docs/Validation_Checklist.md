@@ -1,0 +1,14 @@
+# Validation Checklist
+- [x] Synthetic-data disclosure
+- [x] Deterministic generator
+- [x] SQL schema
+- [x] Power Query transformation and derived bands
+- [x] Analytical model documentation
+- [x] DAX KPI library
+- [x] Four-page report specification
+- [x] Interactive behavior specification
+- [x] Theme JSON
+- [x] Responsible-analytics note
+- [x] Insights and interview walkthrough
+- [ ] Open in Power BI Desktop and visually QA rendering
+- [ ] Save proprietary PBIX in Power BI Desktop if required
